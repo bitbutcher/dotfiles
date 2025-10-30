@@ -1,8 +1,9 @@
 #!/usr/bin/env zsh
 
 export NVM_LAZY_LOAD=true
+export NVM_LAZY_LOAD_EXTRA_COMMANDS=(nvim yarn teneo)
 export NVM_COMPLETION=true
-export NVM_LAZY_LOAD_EXTRA_COMMANDS=('nvim') 
+export NVM_AUTO_USE=true
 
 for file in $HOME/.config/zsh/plugins/*; do
   plugin="$file/$(basename $file).plugin.zsh"

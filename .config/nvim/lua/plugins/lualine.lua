@@ -1,16 +1,17 @@
 return {
-  {
-    'nvim-lualine/lualine.nvim',
-    event = 'VeryLazy',
-    opts = function(_, opts)
-      opts.options.component_separators = {
+  'nvim-lualine/lualine.nvim',
+  event = 'VeryLazy',
+  opts = {
+    options = {
+      theme = 'catppuccin',
+      component_separators = {
         right = '',
         left = ''
-      }
-      opts.options.section_separators = {
+      },
+      section_separators = {
         right = '',
         left = ''
       }
-    end
+    }
   }
 }

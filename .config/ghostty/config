@@ -1,4 +1,4 @@
-command = "/usr/bin/env zsh"
+command = "zsh --login"
 
 font-family = FiraCode Nerd Font Mono
 font-size = 16.0
